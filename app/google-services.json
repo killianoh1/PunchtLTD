@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "223663906504",
+    "firebase_url": "https://punchtfirebase.firebaseio.com",
+    "project_id": "punchtfirebase",
+    "storage_bucket": "punchtfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223663906504:android:4da37c9a5c34fe67",
+        "android_client_info": {
+          "package_name": "com.puncht.pnchtltd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223663906504-funbalc1rc5uhh32bklvm4iau229k22s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjaWHdPlhV-utNx_mJfKFt3JWMY05QYys"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
