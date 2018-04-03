@@ -54,22 +54,23 @@
         style="?android:textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/remove"
+        android:layout_centerHorizontal="true"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_change"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        tools:layout_editor_absoluteY="211dp"
         tools:layout_editor_absoluteX="199dp"
-        android:layout_above="@+id/remove"
-        android:layout_centerHorizontal="true" />
+        tools:layout_editor_absoluteY="211dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_alignParentTop="true"
         android:visibility="gone"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/remove"
@@ -114,14 +115,14 @@
         style="?android:textAppearanceSmall"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:background="@color/colorPrimary"
-        android:text="@string/btn_sign_out"
+        android:text="Sign Out"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="456dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        tools:layout_editor_absoluteY="456dp" />
 
     <TextView
         android:id="@+id/useremail"

@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.puncht.pnchtltd.MainActivity;
+import com.puncht.pnchtltd.MenuActivity;
 import com.puncht.pnchtltd.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -98,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
-                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                    Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
                                     startActivity(intent);
                                     finish();
                                 }

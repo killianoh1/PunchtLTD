@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void setDataToView(FirebaseUser user) {
 
-        email.setText("Welcome To Puncht! " + user.getEmail());
+        email.setText("User Email: " + user.getEmail());
 
 
     }
