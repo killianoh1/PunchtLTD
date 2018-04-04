@@ -7,18 +7,68 @@
     tools:context="com.puncht.pnchtltd.MenuActivity">
 
     <Button
-        android:id="@+id/sign_out"
+        android:id="@+id/account"
         style="?android:textAppearanceSmall"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:text="@string/btn_sign_out"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="456dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginBottom="81dp"
+        android:background="@color/colorPrimary"
+        android:text="Account"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="456dp" />
+
+
+    <Button
+        android:id="@+id/wallet"
+        style="?android:textAppearanceSmall"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/account"
+        android:layout_alignLeft="@+id/account"
+        android:layout_alignStart="@+id/account"
+        android:layout_marginBottom="46dp"
+        android:background="@color/colorPrimary"
+        android:text="Wallet"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="456dp" />
+
+    <Button
+        android:id="@+id/qrcodes"
+        style="?android:textAppearanceSmall"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wallet"
+        android:layout_alignLeft="@+id/wallet"
+        android:layout_alignStart="@+id/wallet"
+        android:layout_marginBottom="39dp"
+        android:background="@color/colorPrimary"
+        android:text="Scan Code"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="456dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/qrcodes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="@font/aladin"
+        android:text="Puncht Menu"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="40dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

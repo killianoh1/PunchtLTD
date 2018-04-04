@@ -14,6 +14,7 @@ import com.puncht.pnchtltd.AccountActivity.LoginActivity;
 
 public class MenuActivity extends AppCompatActivity {
 
+    private Button account;
 
 
     @Override
@@ -21,16 +22,19 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-
+        account = (Button) findViewById(R.id.account);
+        account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMainActivity();
+            }
+        });
 
 
     }
 
-
-
-
-
-
-
-
+    public void openMainActivity(){
+        Intent intent= new Intent(MenuActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
 }
