@@ -15,12 +15,23 @@ import com.puncht.pnchtltd.AccountActivity.LoginActivity;
 public class MenuActivity extends AppCompatActivity {
 
     private Button account;
+    private Button qrcodes;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        qrcodes = (Button) findViewById(R.id.qrcodes);
+        qrcodes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openScan();
+            }
+        });
+
 
         account = (Button) findViewById(R.id.account);
         account.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +42,13 @@ public class MenuActivity extends AppCompatActivity {
         });
 
 
+
+
+    }
+
+    public void openScan(){
+        Intent intent= new Intent(MenuActivity.this, ScanCodeActivity.class);
+        startActivity(intent);
     }
 
     public void openMainActivity(){
